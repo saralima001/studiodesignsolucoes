@@ -1,0 +1,99 @@
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo-image {
+  opacity: 0.6;
+}
+
+.active,
+.demo-image:hover {
+  opacity: 1;
+}
+
+.modal {
+   display: none;
+   position: fixed;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.9);
+   z-index: 3333333; /* Deixar o Modal em cima do Menu */
+}
+
+.container-modal {
+   padding-top: 50px;
+}
+
+.modalImage {
+   margin: auto;
+   display: block;
+   max-width: 85%;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+}
+
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.ImgThumbnail {
+  width: 100%;
+}
+
+span.closeImage  {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+   cursor: pointer;
+   padding-top: 50px;
+}
+span.closeImage:hover,
+span.closeImage:focus {
+   color: grey;
+   cursor: pointer;
+}
+
+ @media only screen and (max-width: 800px){
+
+   .modal {
+       padding-top: 140px;
+       padding-bottom: 50px;
+   }
+
+   .modalImage {
+      max-width: 80%;
+   }
+
+}

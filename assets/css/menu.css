@@ -1,0 +1,140 @@
+.menu-inicio nav, .menu-geral nav {
+  padding: 0 15px 0 0;
+  position: fixed;
+}
+.menu-inicio a, .menu-geral a {
+  color: white;
+  text-decoration: none;
+}
+.menu-inicio, .menu-geral,
+.submenu {
+  list-style-type: none;
+}
+
+.menu-inicio a:hover, .menu-geral a:hover,
+.item a:hover::after {
+  color: white;
+  border: 2px solid white;
+}
+
+.menu-inicio {
+    background: none;
+  }
+
+  .menu-geral {
+    background: #222;
+  }
+
+/* Mobile menu */
+.menu-inicio, .menu-geral {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-inicio li a, .menu-geral li a {
+  display: block;
+  padding: 15px 15px;
+}
+.menu-inicio li.subitem a, .menu-geral li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+  font-size: 10px;
+  padding: 15px;
+}
+.active .item {
+  display: block;
+}
+
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+}
+
+.icones {
+  font-size: 30px;
+}
+
+.icone-x {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo img {
+  width: 100px;
+}
+
+@media all and (min-width: 700px) {
+  .menu-inicio, .menu-geral {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .menu-inicio {
+    align-items: center;
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  .menu-geral {
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #222;
+  }
+  .logo {
+    order: 0;
+  }
+
+  .logo img {
+    width: 130px;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+    font-size: 15px;
+    z-index: 3333333;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
