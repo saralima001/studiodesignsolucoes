@@ -1,6 +1,7 @@
-﻿## Tabela de conteúdos
+## Tabela de conteúdos
 <a href="#logo"> Logo </a> <br/>
 <a href="#descricao"> Descrição </a> <br/>
+<a href="#visitar"> Visitar o Site </a> <br/>
 <a href="#status"> Status do Projeto </a> <br/>
 <a href="#caracteristicas"> Características </a> <br/>
 <a href="#tecnologias"> Tecnologias </a> <br/>
@@ -17,6 +18,11 @@
 
 ## Descrição
 Versão 2.0 do site institucional da empresa Studio Design Soluções.
+
+<a name="visitar"/>
+
+## Visitar o Site
+<a href="http://limaprogramming.atwebpages.com/StudioDesignSolu%C3%A7%C3%B5es/index.php"> Studio Design Soluções </a>
 
 <a name="status"/>
 
