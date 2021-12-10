@@ -11,7 +11,7 @@
 
 ## Logo
 <div align="center">
-  <img src="./assets/imagens/studio-logo-cor-fundo-branco-redondo.png" width="100px" heigth="100px"/>
+  <img src="./assets/imagens/studio-logo-cor-fundo-branco-redondo.png" width="200px" heigth="200px"/>
 </div>
 
 <a name="descricao"/>
